@@ -56,9 +56,15 @@ searchInputElement.addEventListener('keyup', (event) => {
                     const track = item.trackName;
                     const artist = item.artistName;
 
-                    const itemElement = document.createElement("li");
-                    itemElement.innerText = `|${i}|${track}|${artist}|`;
-                    searchResultElement.appendChild(itemElement);
+                    var row = searchResultElement.insertRow(i);
+
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    var cell3 = row.insertCell(2);
+
+                    cell1.innerHTML = i;
+                    cell2.innerHTML = `${track}`;
+                    cell3.innerHTML = `${artist}`;
                 };
             };
         })
