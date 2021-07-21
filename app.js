@@ -73,6 +73,7 @@ searchInputElement.addEventListener('keyup', (event) => {
             hideLoader();
             hideNoResults();
             showError();
+            searchResultElement.innerHTML = "";
             console.log(error);
         });
 });
