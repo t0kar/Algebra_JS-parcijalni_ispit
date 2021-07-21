@@ -56,11 +56,12 @@ searchInputElement.addEventListener('keyup', (event) => {
                     const track = item.trackName;
                     const artist = item.artistName;
 
-                    var row = searchResultElement.insertRow(i);
 
-                    var cell1 = row.insertCell(0);
-                    var cell2 = row.insertCell(1);
-                    var cell3 = row.insertCell(2);
+                    let row = searchResultElement.insertRow(i);
+
+                    let cell1 = row.insertCell(0);
+                    let cell2 = row.insertCell(1);
+                    let cell3 = row.insertCell(2);
 
                     cell1.innerHTML = i;
                     cell2.innerHTML = `${track}`;
